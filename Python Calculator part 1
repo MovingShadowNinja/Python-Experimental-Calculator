@@ -1,0 +1,50 @@
+def muilt(num, num_1):
+    return num * num_1
+def div(num, num_1):
+    return num // num_1
+def add(num, num_1):
+    return num + num_1
+def sub(num, num_1):
+    return num - num_1
+def calc_1():
+    op = input(""" enter muilt for muiltplication '\n',
+               enter div for division '\n',
+               enter add for addition '\n',
+               enter sub for subtraction """'\n')
+    if op == "muilt":
+        num_str = input("pick num")
+        num_str_1 = input("pick num")
+        num = int(num_str)
+        num_1 = int(num_str_1)
+        return muilt(num,num_1)
+    elif op == "div":
+        num_str = input("pick num")
+        num_str_1 = input("pick num")
+        num = int(num_str)
+        num_1 = int(num_str_1)
+        return div(num,num_1)
+    elif op == "add":
+        num_str = input("pick num")
+        num_str_1 = input("pick num")
+        num = int(num_str)
+        num_1 = int(num_str_1)
+        return add(num,num_1)
+    elif op == "sub":
+        num_str = input("pick num")
+        num_str_1 = input("pick num")
+        num = int(num_str)
+        num_1 = int(num_str_1)
+        return sub(num,num_1)
+    else:
+        return "default"
+result = []
+result.append(calc_1())
+
+print(calc_1())
+print(result)
+#print(sub(12,2))
+#print(add(14,3))
+#print(muilt(4,3))
+#print(div(12,4))
+
+      
