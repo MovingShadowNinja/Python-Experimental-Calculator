@@ -11,42 +11,54 @@ def calc_1():
                enter div for division '\n',
                enter add for addition '\n',
                enter sub for subtraction """'\n')
-    if op == "muilt":
-        num_str = input("pick num")
-        num_str_1 = input("pick num")
+    if op == op == "muilt" or op == "muiltplication" or op == "MUILT" or op == "*":
+        num_str = input("pick number to muiltply")
+        num_str_1 = input("pick a number to muiltply by")
         num = int(num_str)
         num_1 = int(num_str_1)
         return muilt(num,num_1)
-    elif op == "div":
-        num_str = input("pick num")
-        num_str_1 = input("pick num")
+    elif op == "div" or op == "division" or op == "DIV" or op == "%":
+        num_str = input("pick a number to divide")
+        num_str_1 = input("pick a your want to divide by")
         num = int(num_str)
         num_1 = int(num_str_1)
         return div(num,num_1)
-    elif op == "add":
-        num_str = input("pick num")
-        num_str_1 = input("pick num")
+    elif op == "add" or op == "addition" or op == "ADD" or op == "+":
+        num_str = input("pick number you want to add")
+        num_str_1 = input("what number do you want to add to it")
         num = int(num_str)
         num_1 = int(num_str_1)
         return add(num,num_1)
-    elif op == "sub":
-        num_str = input("pick num")
-        num_str_1 = input("pick num")
+    elif op == "sub" or op == "subtraction" or op == "SUB" or op == "-":
+        num_str = input("pick number you want to subtract")
+        num_str_1 = input("pick a number you want to subtract from")
         num = int(num_str)
         num_1 = int(num_str_1)
         return sub(num,num_1)
     else:
         while op != muilt and not op == div and op != div and not op == sub:
-            return "bye"
-       
-result = []
-result.append(calc_1())
+            return "Okay bye"
 
-print(calc_1())
-print(result)
+def Q_A():
+    Q = input("Do you want to use the calculator")
+    if Q == 'y' or Q == 'yes' or Q == 'ya' or Q == 'YES' or Q == 'sure' or Q == 'Y' or Q == 'YEAH' or Q == '1':
+        return calc_1()
+    elif Q == 'n' or Q == 'no' or Q == 'nope' or Q == 'NO' or Q == 'not really' or Q == 'N' or Q == 'NOPE' or Q == '2':
+        print("Okay Thanks for stopping by")
+    else:
+        print("You won't exit until you enter yes or no sorry about that")
+        return Q_A()
+        
+resulted = Q_A() 
+result = []
+result.append(resulted)
+Positive = ['y','yes','ya','YES','sure', 'Y','YEAH','1']
+negative = ['n' ,'no','nope','NO','not really','N','NOPE','2']
+print("Your Answer is",resulted)
 #print(sub(12,2))
 #print(add(14,3))
 #print(muilt(4,3))
 #print(div(12,4))
+#need to have a way to allow people to put in Things in uppercase letters
 
       
