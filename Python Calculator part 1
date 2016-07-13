@@ -36,7 +36,9 @@ def calc_1():
         num_1 = int(num_str_1)
         return sub(num,num_1)
     else:
-        return "default"
+        while op != muilt and not op == div and op != div and not op == sub:
+            return "bye"
+       
 result = []
 result.append(calc_1())
 
