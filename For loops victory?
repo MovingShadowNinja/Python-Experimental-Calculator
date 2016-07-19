@@ -1,0 +1,8 @@
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"] 
+def to_upper():
+    for i in alpha:
+        upper = str.upper(i)
+        print(ord(upper))
+to_upper()
+for i in alpha:
+    print(ord(i))
